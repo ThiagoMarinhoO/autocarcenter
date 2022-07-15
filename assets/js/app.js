@@ -256,33 +256,33 @@ jQuery(function($){
   })
 })
 
-class Accordion {
-  constructor(accordionListQuestion) {
-    this.accordionListQuestion = document.querySelectorAll(accordionListQuestion);
-    this.activeItemClass = 'openAccordion'
-  }
+// class Accordion {
+//   constructor(accordionListQuestion) {
+//     this.accordionListQuestion = document.querySelectorAll(accordionListQuestion);
+//     this.activeItemClass = 'openAccordion'
+//   }
   
-  toggleAccordion(item){
-    item.classList.toggle(this.activeItemClass)
-    item.nextElementSibling.classList.toggle(this.activeItemClass)
-  }
+//   toggleAccordion(item){
+//     item.classList.toggle(this.activeItemClass)
+//     item.nextElementSibling.classList.toggle(this.activeItemClass)
+//   }
   
-  addAccordionEvent() {
-    this.accordionListQuestion.forEach( question => {
-      question.addEventListener('click', () => this.toggleAccordion(question));
-    });
-  }
+//   addAccordionEvent() {
+//     this.accordionListQuestion.forEach( question => {
+//       question.addEventListener('click', () => this.toggleAccordion(question));
+//     });
+//   }
   
-  initAccordion() {
-    if(this.accordionListQuestion.length) {
-      this.addAccordionEvent();
-    }
-    return this;
-  }
-}
+//   initAccordion() {
+//     if(this.accordionListQuestion.length) {
+//       this.addAccordionEvent();
+//     }
+//     return this;
+//   }
+// }
 
-const accordion = new Accordion(".headerQuestion")
-accordion.initAccordion()
+// const accordion = new Accordion(".headerQuestion")
+// accordion.initAccordion()
 
 const Scrollwindow = {
   scrollReveal: ScrollReveal({
